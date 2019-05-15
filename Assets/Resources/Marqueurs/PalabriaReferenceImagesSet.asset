@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c37f7746917f4760aa00e7ff7fd81dc, type: 3}
+  m_Name: PalabriaReferenceImagesSet
+  m_EditorClassIdentifier: 
+  resourceGroupName: PalabriaReferenceImagesSet
+  referenceImages:
+  - {fileID: 11400000, guid: a9b2407f5c4aaec4da370d9ccdc220e5, type: 2}
+  - {fileID: 11400000, guid: ebe316d9028712e4e9b9056f03628dc0, type: 2}
+  - {fileID: 11400000, guid: 7f5ca97e6c46830499176b1a71686f95, type: 2}
+  - {fileID: 11400000, guid: 871c0a5e63f9b3148bf7e6bb1aaba44e, type: 2}
+  - {fileID: 11400000, guid: e59a28c0ca4b3ac46aaaeff6ff1a0940, type: 2}

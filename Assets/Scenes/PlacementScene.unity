@@ -2407,8 +2407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7a3a497c03542349ec71be5ec06118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  referenceImage: {fileID: 11400000, guid: b277e5ed99ec742deaf811ab0ee5c84f, type: 2}
-  prefabToGenerate: {fileID: 10862485874935376, guid: bb5b4f443112345a8a9a066c496f7ca0,
+  referenceImage: {fileID: 11400000, guid: 7f5ca97e6c46830499176b1a71686f95, type: 2}
+  prefabToGenerate: {fileID: 3192573631065176350, guid: efeb2ea343454422aa91433c723ca4c5,
     type: 3}
   imageLoader: {fileID: 637265773}
   cpt: 0
@@ -2416,6 +2416,7 @@ MonoBehaviour:
   firstInit: 0
   moyennePosition: {x: 0, y: 0, z: 0}
   moyenneRotation: {x: 0, y: 0, z: 0}
+  planeDetection: 0
 --- !u!4 &1453648171
 Transform:
   m_ObjectHideFlags: 0

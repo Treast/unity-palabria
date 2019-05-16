@@ -26,12 +26,17 @@ public class initScene : MonoBehaviour
 
     public Vector3 moyennePosition;
     public Vector3 moyenneRotation;
+    UnityARSessionNativeInterface m_session;
+    public UnityARPlaneDetection planeDetection;
+
     // Use this for initialization
     void Start()
     {
         EventManager.StartListening("PlaneDetect", PlaneDetect);
+        m_session = UnityARSessionNativeInterface.GetARSessionNativeInterface();
+
     }
-    
+
 
     void PlaneDetect()
     {
@@ -72,16 +77,19 @@ public class initScene : MonoBehaviour
                 }
                 cpt++;
                 imageLoader.fillAmount = Mathf.Clamp01(cpt / endLoop);
-                moyennePosition += UnityARMatrixOps.GetPosition(arImageAnchor.transform);
-                moyenneRotation += Vector3.up * UnityARMatrixOps.GetRotation(arImageAnchor.transform).eulerAngles.y;
 
-                if (Mathf.Clamp01(cpt / endLoop) == 1)
-                
+                if (Mathf.Clamp01(cpt / endLoop) == 1) {
+
                     // Placement de l'objet
-                    imageAnchorGO.transform.position = moyennePosition / endLoop;
-                    imageAnchorGO.transform.eulerAngles = moyenneRotation / endLoop;
+                    // Piste
+                    // https://gist.github.com/otmb/28621781f88dc6a34b35e1edb2740fb2
+
+                    imageAnchorGO.transform.position = UnityARMatrixOps.GetPosition(arImageAnchor.transform);
+                    imageAnchorGO.transform.eulerAngles = Vector3.up * UnityARMatrixOps.GetRotation(arImageAnchor.transform).eulerAngles.y;
+
                     Destroy(imageLoader);
-                    Destroy(GameObject.FindGameObjectWithTag("generatePlane"));
+                    //Camera.main.WorldToViewportPoint(imageAnchorGO.transform.position);
+                    //Destroy(GameObject.FindGameObjectWithTag("generatePlane"));
                     GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("OffAnimation");
                 }
             }
@@ -92,7 +100,24 @@ public class initScene : MonoBehaviour
 
         }
 
+    }
 
+    IEnumerator RemoveAnchorCoroutine(ARImageAnchor anchor)
+    {
+        yield return new WaitForSeconds(3.0f);
+        //doesn't have to be in a coroutine, but for my uses it is
+        m_session.RemoveUserAnchor(anchor.identifier);
+    }
+
+    public void planeDetectionOFF()
+    {
+        planeDetection = UnityARPlaneDetection.None;
+        ARKitWorldTrackingSessionConfiguration config = new ARKitWorldTrackingSessionConfiguration();
+        config.planeDetection = planeDetection;
+        //config.alignment = startAlignment;
+        config.getPointCloudData = false;
+        config.enableLightEstimation = false;
+        m_session.RunWithConfig(config);
     }
 
 
@@ -107,12 +132,6 @@ public class initScene : MonoBehaviour
         UnityARSessionNativeInterface.ARImageAnchorAddedEvent -= AddImageAnchor;
         UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent -= UpdateImageAnchor;
         //UnityARSessionNativeInterface.ARImageAnchorRemovedEvent -= RemoveImageAnchor;
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }

@@ -35,7 +35,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Animation.unity
     guid: 15f4bd54c341cd441b475e148617c329
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/PlacementScene.unity
     guid: efbed404ac5d34a1f8b1145b35b12d89
   m_configObjects: {}

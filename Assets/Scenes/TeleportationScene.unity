@@ -471,6 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdc2429b6f2474959b6faf65daa0aac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignoreRotation: 0
 --- !u!1 &202477753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2843,6 +2844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdc2429b6f2474959b6faf65daa0aac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignoreRotation: 0
 --- !u!1 &944254863
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,7 +3827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616d92abc51b50148be122d078cb8315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shouldHideMaterial: 0
 --- !u!1 &1636476996
 GameObject:
   m_ObjectHideFlags: 0
@@ -4907,6 +4908,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Arbre \xE0 g\xE9n\xE9rer"
       objectReference: {fileID: 0}
+    - target: {fileID: 2242292156190125094, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: ignoreRotation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2242292154501350442, guid: fdd25a4000174459f8280f2be4f976de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4977,6 +4983,51 @@ PrefabInstance:
       propertyPath: audioImageLoader
       value: 
       objectReference: {fileID: 480158368}
+    - target: {fileID: 2242292155680323466, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242292155680323466, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242292155680323466, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242292155680323466, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743090680843160977, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743090680843160977, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743090680843160977, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743090680843160977, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743090680299804221, guid: fdd25a4000174459f8280f2be4f976de,
+        type: 3}
+      propertyPath: ignoreRotation
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdd25a4000174459f8280f2be4f976de, type: 3}
 --- !u!1001 &7803539469789888234

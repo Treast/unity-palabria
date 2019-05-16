@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class SetGameObjectPosition : MonoBehaviour
 {
+    [SerializeField] bool ignoreRotation = false;
+
     public void SetPosition(Vector3 position, Quaternion rotation)
     {
         transform.position = position;
-        transform.rotation = rotation;
+        if(!ignoreRotation) {
+            transform.rotation = rotation;
+        }
     }
 
     public void SetPositionToOrigin() {

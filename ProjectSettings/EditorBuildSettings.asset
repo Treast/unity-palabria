@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/9fc0d4010bbf28b4594072e72b8655ab
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/Pikachu.unity
     guid: f039fea9119274ba5be182f3eaa491bc
@@ -18,21 +18,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Papeteries.unity
     guid: dbe2b84c729944a36a746736e2b0812a
   - enabled: 0
-    path: Assets/Plugins/UnityARKitPlugin/Examples/UnityParticlePainter/UnityParticlePainter.unity
-    guid: 0327f0aa0142146c291df8203b848257
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/WorldTrackingScene.unity
     guid: 6b4192e10240944b69cbe90ecab73a32
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TeleportationScene.unity
     guid: b56b7b7ce47e944bca6749134b1c0f3d
   - enabled: 0
-    path: Assets/Plugins/UnityARKitPlugin/Examples/UnityAROcclusion/UnityAROcclusion.unity
-    guid: 7f026c59fb9d6489ab924c6e0e119760
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Plugins/UnityARKitPlugin/Examples/ARKit1.5/UnityARPointCloudIds/UnityPointCloudIds.unity
-    guid: e7b13cc3e03de46c3bdba51876cfc297
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/Animation.unity
     guid: 15f4bd54c341cd441b475e148617c329
+  - enabled: 0
+    path: Assets/Scenes/PlacementScene.unity
+    guid: efbed404ac5d34a1f8b1145b35b12d89
   m_configObjects: {}

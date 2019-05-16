@@ -84,7 +84,6 @@ public string defaultTriggerEvent;
         UnityEvent thisEvent = null;
         if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
-            Debug.Log("triggering "+eventName);
             thisEvent.Invoke();
         }
     }

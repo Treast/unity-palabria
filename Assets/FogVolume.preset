@@ -1,0 +1,847 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FogVolume
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 5e7a52d786954b246ab3797052502655,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showLighting
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: OtherTAB
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showGradient
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showPointLights
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showNoiseProperties
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showVolumeProperties
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showColorTab
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: tempShadowCaster
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showCustomizationOptions
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showDebugOptions
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showOtherOptions
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: generalInfo
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TexturesGroup
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BackgroundImagesPath
+    value: /Volumes/Transcend/unity-ar/Gobelins_AR/Assets/Plugins/FogVolume/Scripts/Editor/Themes/png
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _FogType
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: RenderableInSceneView
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowCaster
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _PerformanceLUT
+    value: 
+    objectReference: {fileID: 2800000, guid: f651c771afb96204b85e925622f5e2b9, type: 3}
+  - target: {fileID: 0}
+    propertyPath: fogVolumeScale.x
+    value: 91.74
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: fogVolumeScale.y
+    value: 28.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: fogVolumeScale.z
+    value: 38.7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FogMainColor.r
+    value: 0.15761839
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FogMainColor.g
+    value: 0.20754719
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FogMainColor.b
+    value: 0.19994539
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FogMainColor.a
+    value: 0.4392157
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _FogColor.r
+    value: 0.9303578
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _FogColor.g
+    value: 0.9481606
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _FogColor.b
+    value: 0.9528302
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _FogColor.a
+    value: 0.3137255
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _AmbientAffectsFogColor
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Exposure
+    value: 2.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Offset
+    value: -0.067
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Gamma
+    value: 0.98
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Tonemap
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Visibility
+    value: 250
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ColorAdjust
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _SelfShadowSteps
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowCameraSkippedFrames
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _SelfShadowColor.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _SelfShadowColor.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _SelfShadowColor.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _SelfShadowColor.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscatteringAnisotropy
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscatteringIntensity
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscatteringStartDistance
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscatteringTransitionWideness
+    value: 72.24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscatteringColor.r
+    value: 0.9528302
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscatteringColor.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscatteringColor.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscatteringColor.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscattering
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: HeightAbsorption
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: HeightAbsorptionMin
+    value: -0.83
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: HeightAbsorptionMax
+    value: 0.13
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: SunAttached
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Sun
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _ShadeNoise
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _DirectionalLighting
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _DirectionalLightingDistance
+    value: 0.53
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DirectLightingShadowDensity
+    value: 15
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LightExtinctionColor.r
+    value: 0.990566
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LightExtinctionColor.g
+    value: 0.107467085
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LightExtinctionColor.b
+    value: 0.7838116
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LightExtinctionColor.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DirectLightingShadowSteps
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bAbsorption
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Absorption
+    value: 0.265
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _LightExposure
+    value: 2.65
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Lambert
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LambertianBias
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NormalDistance
+    value: 0.01
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DirectLightingAmount
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DirectLightingDistance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowBrightness
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _AmbientColor.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _AmbientColor.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _AmbientColor.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _AmbientColor.a
+    value: 0.5372549
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowShift
+    value: 0.05
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PointLightsIntensity
+    value: 2.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PointLightingDistance
+    value: 17.89
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PointLightingDistance2Camera
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PointLightCullSizeMultiplier
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PointLightsActive
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: EnableInscattering
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InscatteringColor.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InscatteringColor.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InscatteringColor.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InscatteringColor.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _LightHaloTexture
+    value: 
+    objectReference: {fileID: 2800000, guid: fa2064f3c8dffc04f93f4f74eae0d72f, type: 3}
+  - target: {fileID: 0}
+    propertyPath: CoverageTex
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LightHalo
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _HaloWidth
+    value: 0.75
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _HaloOpticalDispersion
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _HaloRadius
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _HaloIntensity
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _HaloAbsorption
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InscatteringShape
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InscatteringIntensity
+    value: 0.343
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InscatteringStartDistance
+    value: 17.72
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InscatteringTransitionWideness
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: EnableNoise
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Octaves
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _DetailMaskingThreshold
+    value: 40
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bSphericalFade
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: SphericalFadeDistance
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DetailDistance
+    value: 500
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DetailTiling
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _DetailRelativeSpeed
+    value: 9.7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _BaseRelativeSpeed
+    value: 0.02
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _NoiseDetailRange
+    value: 0.119
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _Curl
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BaseTiling
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Coverage
+    value: 0.52
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseDensity
+    value: 1.8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _3DNoiseScale
+    value: 122.89
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Iterations
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _BlendMode
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: IterationStep
+    value: 400
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _OptimizationFactor
+    value: 0.000000067
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _SamplingMethod
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _VisibleByReflectionProbeStatic
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: GameCameraGO
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _DebugMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: useHeightGradient
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: GradMin
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: GradMax
+    value: 0.17
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: GradMin2
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: GradMax2
+    value: -0.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _NoiseVolume2
+    value: 
+    objectReference: {fileID: 11700000, guid: ce515a5a715cb574eb40037cfb1ab766, type: 2}
+  - target: {fileID: 0}
+    propertyPath: _NoiseVolume
+    value: 
+    objectReference: {fileID: 11700000, guid: ce515a5a715cb574eb40037cfb1ab766, type: 2}
+  - target: {fileID: 0}
+    propertyPath: NoiseIntensity
+    value: 0.323
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseContrast
+    value: 10.9
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FadeDistance
+    value: 5000
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Vortex
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _VortexAxis
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bVolumeFog
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: VolumeFogInscatterColorAffectedWithFogColor
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _LightScatterMethod
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: rotation
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: RotationSpeed
+    value: 1.13
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Speed.x
+    value: -2.72
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Speed.y
+    value: 0.09
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Speed.z
+    value: 0.15
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Speed.w
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Stretch.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Stretch.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Stretch.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Stretch.w
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: SceneCollision
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShowPrimitives
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: EnableDistanceFields
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PrimitivesList.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _PrimitiveEdgeSoftener
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _PrimitiveCutout
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Constrain
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _SceneIntersectionSoftness
+    value: 50
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _jitter
+    value: 0.0045
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FogRenderer
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.size
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[0]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[1]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[2]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[3]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[4]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[5]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[6]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[7]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[8]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackground.Array.data[9]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _InspectorBackgroundIndex
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Description
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: EnableGradient
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Gradient
+    value: 
+    objectReference: {fileID: 2800000, guid: e09c460d86c817b43a8848b8e1dddbaa, type: 3}
+  - target: {fileID: 0}
+    propertyPath: HideWireframe
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DrawOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShowDebugGizmos
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: RT_Opacity
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: RT_OpacityBlur
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowCutoff
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CastShadows
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowCameraGO
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: shadowCameraPosition
+    value: 20
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _ShadowCamera
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _PushAlpha
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FogVolumeShader
+    value: 
+    objectReference: {fileID: 4800000, guid: 6040e6c91df9d9d47b7e5426d41a7471, type: 3}
+  - target: {fileID: 0}
+    propertyPath: ShadowProjector
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowProjectorMesh
+    value: 
+    objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 3}
+  - target: {fileID: 0}
+    propertyPath: ShadowColor.r
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowColor.g
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowColor.b
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowColor.a
+    value: 0.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _ztest
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _FogVolumeData
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ExcludeFromLowRes
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PointLightCPUMaxDistance
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PointLightScreenMargin
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PointLightsRealTimeUpdate
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PointLightBoxCheck
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PrimitivesRealTimeUpdate
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Primitives.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: IsVisible
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CreateSurrogate
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InjectCustomDepthBuffer
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: UseConvolvedLightshafts
+    value: 0
+    objectReference: {fileID: 0}

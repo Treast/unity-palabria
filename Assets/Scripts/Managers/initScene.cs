@@ -60,7 +60,7 @@ public class initScene : MonoBehaviour
             Quaternion rotation = UnityARMatrixOps.GetRotation(arImageAnchor.transform);
 
             imageAnchorGO = Instantiate<GameObject>(prefabToGenerate, position, rotation);
-
+            GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("OffAnimation");
         }
     }
 

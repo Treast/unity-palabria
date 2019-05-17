@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "UI_LogoCr\xE9dit_Intro"
+  m_Name: "UI_LogoCre\u0301dit_Intro"
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0

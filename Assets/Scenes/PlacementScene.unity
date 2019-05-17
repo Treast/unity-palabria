@@ -2416,7 +2416,7 @@ MonoBehaviour:
   firstInit: 0
   moyennePosition: {x: 0, y: 0, z: 0}
   moyenneRotation: {x: 0, y: 0, z: 0}
-  planeDetection: 0
+  planeDetection: 1
 --- !u!4 &1453648171
 Transform:
   m_ObjectHideFlags: 0

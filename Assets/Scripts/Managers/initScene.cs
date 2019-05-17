@@ -15,9 +15,9 @@ public class initScene : MonoBehaviour
     private GameObject prefabToGenerate;
 
     private GameObject imageAnchorGO;
-  
-	public Image imageLoader; 
-	private bool planeDetect = false;
+
+    public Image imageLoader;
+    private bool planeDetect = false;
 
     public float cpt = 0;
     public float endLoop = 60;
@@ -41,10 +41,11 @@ public class initScene : MonoBehaviour
     void PlaneDetect()
     {
         planeDetect = true;
-        if(!firstInit) {
+        if (!firstInit)
+        {
             Debug.Log("Premier");
             UnityARSessionNativeInterface.ARImageAnchorAddedEvent += AddImageAnchor;
-            UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent += UpdateImageAnchor;
+            //UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent += UpdateImageAnchor;
             firstInit = true;
         }
     }
@@ -73,12 +74,13 @@ public class initScene : MonoBehaviour
                 if (!imageAnchorGO.activeSelf)
                 {
                     imageAnchorGO.SetActive(true);
-                    
+
                 }
                 cpt++;
                 imageLoader.fillAmount = Mathf.Clamp01(cpt / endLoop);
 
-                if (Mathf.Clamp01(cpt / endLoop) == 1) {
+                if (Mathf.Clamp01(cpt / endLoop) == 1)
+                {
 
                     // Placement de l'objet
                     // Piste

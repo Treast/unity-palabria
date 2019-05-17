@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MarqueurAR_ReferenceImage
   m_EditorClassIdentifier: 
   imageName: MarqueurARReferenceImage
-  imageTexture: {fileID: 2800000, guid: 77da13fd043694444bf760f22e024a79, type: 3}
-  physicalSize: 0.166
+  imageTexture: {fileID: 2800000, guid: c222dfb157f8e4c7c88e5e477db9c632, type: 3}
+  physicalSize: 0.2

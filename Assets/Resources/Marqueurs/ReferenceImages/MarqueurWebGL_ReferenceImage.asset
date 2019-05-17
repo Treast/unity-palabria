@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MarqueurWebGL_ReferenceImage
   m_EditorClassIdentifier: 
   imageName: MarqueurWebGLReferenceImage
-  imageTexture: {fileID: 2800000, guid: 1edb2e7ee3bfef041a46c2e7ddac1f27, type: 3}
-  physicalSize: 0.166
+  imageTexture: {fileID: 2800000, guid: 8f879e2b0a8044475a86a44dfbee254a, type: 3}
+  physicalSize: 0.2

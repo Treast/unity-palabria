@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MarqueurDrone_ReferenceImage
   m_EditorClassIdentifier: 
   imageName: MarqueurDroneReferenceImage
-  imageTexture: {fileID: 2800000, guid: 0d2d4b1d61f99cf45a73056fcca6bf98, type: 3}
-  physicalSize: 0.166
+  imageTexture: {fileID: 2800000, guid: 553a69cabaa8d4902a99d8431a3318d5, type: 3}
+  physicalSize: 0.2

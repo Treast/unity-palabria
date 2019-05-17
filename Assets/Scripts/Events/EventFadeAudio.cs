@@ -15,7 +15,9 @@ public class EventFadeAudio : MonoBehaviour
 
     void FadeAudio()
     {
-        audioSource.DOFade(0, 2);
+        if(audioSource.isPlaying) {
+            audioSource.DOFade(0, 2);
+        }
     }
 
     public void FadeAllAudio() {

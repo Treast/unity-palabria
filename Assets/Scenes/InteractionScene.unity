@@ -520,6 +520,18 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 748496796}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &748496803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748496797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb09c7cbd09b22d4dbbb82f32be9c1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &748496804
 MonoBehaviour:
   m_ObjectHideFlags: 0

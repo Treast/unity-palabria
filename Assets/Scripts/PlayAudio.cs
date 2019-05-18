@@ -35,6 +35,7 @@ public class PlayAudio : MonoBehaviour
         yield return new WaitForSeconds(1.8f);
         hasTriggered = true;
         audioSource.Stop();
+        pointerAnimator.SetBool("MusicIsPlaying", false);
     }
 
     public void Play() {
@@ -50,6 +51,7 @@ public class PlayAudio : MonoBehaviour
         audioSource.Play();
         hasTriggered = false;
         hasStarted = true;
+        pointerAnimator.SetBool("MusicIsPlaying", true);
     }
 
     void LateUpdate()
@@ -64,6 +66,7 @@ public class PlayAudio : MonoBehaviour
             if (hasStarted && !hasTriggered)
             {
                 hasTriggered = true;
+                pointerAnimator.SetBool("MusicIsPlaying", false);
                 pointerAnimator.SetTrigger("StopAnimation");
             }
         }        

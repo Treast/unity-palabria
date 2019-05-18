@@ -48,10 +48,12 @@ public class Selector3 : MonoBehaviour
                         float p = Mathf.Clamp01(currentTime / selectionDuration);
                         pointerLoader.color = new Color(1, 1, 1, 1);
                         pointerLoader.fillAmount = p;
+                        pointerAnimator.SetBool("IsSelecting", true);
 
                         if (p >= 1)
                         {
                             hasTriggered = true;
+                            pointerAnimator.SetBool("IsSelecting", false);
                             EventManager.TriggerEvent("AudioGonnaPlay");
                             pointerAnimator.SetTrigger("PlayAnimation");
                             selectable.TriggerPointerCompleted();
@@ -64,6 +66,7 @@ public class Selector3 : MonoBehaviour
         else
         {
             currentTime = 0;
+            pointerAnimator.SetBool("IsSelecting", false);
             hasTriggered = false;
             if (lastGameObjectHit)
             {

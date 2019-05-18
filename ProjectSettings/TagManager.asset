@@ -9,6 +9,7 @@ TagManager:
   - AudioSelector
   - generatePlane
   - StartingScreen
+  - PointerLoader
   layers:
   - Default
   - TransparentFX

@@ -3,7 +3,42 @@ guid: 312a4aa7d6d8c8a459368881be137f1b
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arbuste.2
+    second: {fileID: 2100000, guid: 44d8a646d0960cf43b3331eca6528cb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ChampignonHonrizontal
+    second: {fileID: 2100000, guid: 104fdb7ca48cedc428e35340b97b90fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Herbe.1
+    second: {fileID: 2100000, guid: ca553de43e305214586c6b718650fafc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 603ca3b97e50d9a4e91eed223014e395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RocheRectangle
+    second: {fileID: 2100000, guid: a941864518200e742b2ed136faee0556, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tronc.1
+    second: {fileID: 2100000, guid: 2bb00148d32586f48a20f70e6aee4956, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube.1
+    second: {fileID: 2100000, guid: 3187b3d36146f744ea9547c75feab2b5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

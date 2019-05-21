@@ -3,7 +3,52 @@ guid: ecb2877b4da677647b0d6f750e86b9b2
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arbuste.1
+    second: {fileID: 2100000, guid: 53e38c8174e505f4dac153d58b370f5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Champignon
+    second: {fileID: 2100000, guid: 0a0aa2ce384c84142abece1a90b051b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Herbe
+    second: {fileID: 2100000, guid: 80da058f6192d904d9cacbe28cb8ffbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Herbes2
+    second: {fileID: 2100000, guid: 9858d886efed92c4b92f7fe26f6e5b60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 64fa063fbd4f5cf4995a079e06d4ec57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.2
+    second: {fileID: 2100000, guid: b7cfe6e4bf66b4445ab4fd5a6641bd93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roche
+    second: {fileID: 2100000, guid: a7f40a148c5b7894abaa36d020aada4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RocheCube
+    second: {fileID: 2100000, guid: cde36632cdbf8794baafe59bdd8180e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tronc
+    second: {fileID: 2100000, guid: fd52054f9dd182a4ea0a1d424fd96d7c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

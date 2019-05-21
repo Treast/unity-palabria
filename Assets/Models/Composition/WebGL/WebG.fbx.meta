@@ -3,7 +3,67 @@ guid: d0714a0543a96f141891c4b1ef99e398
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Herbes2
+    second: {fileID: 2100000, guid: e5f6edcf5109cf245abc83c7c8aa6680, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 98b0526719c33e64e81187539bf134e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plant
+    second: {fileID: 2100000, guid: 37df7dae471a28849a7f30d9642d460d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RocheCube1
+    second: {fileID: 2100000, guid: 76311907326294a428d8bf7dc5000f7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RocheCube2
+    second: {fileID: 2100000, guid: 41566f544ac81cb45832232424df5d5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RocheCube3
+    second: {fileID: 2100000, guid: cbb655efcc3acd94bb62aa094951231a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RocheCube4
+    second: {fileID: 2100000, guid: 8ad2648605e3d6444acaf37be962b857, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RocheCube5
+    second: {fileID: 2100000, guid: 9184f3e9fe478674a896d6ebce19b28d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RocheCube6
+    second: {fileID: 2100000, guid: 019513f60d635204ba742b96e395c39f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tige
+    second: {fileID: 2100000, guid: 8375ae9ffd77e0b4795f55111dd88bcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tron
+    second: {fileID: 2100000, guid: 4d9a5dc3d55a628469d3c07b33ebf5fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube
+    second: {fileID: 2100000, guid: 9ac5136466da2c24f99f5c62936d7198, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

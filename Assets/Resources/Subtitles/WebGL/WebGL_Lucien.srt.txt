@@ -1,0 +1,19 @@
+0
+00:00:00.000 --> 00:00:05.000
+J’ai bien aimé ce projet notamment lorsqu’on a dû manipuler le téléphone. 
+
+1
+00:00:05.000 --> 00:00:09.000
+Parce qu’on a joué sur l’orientation du téléphone pour contrôler les caméras, 
+
+2
+00:00:09.000 --> 00:00:12.000
+et  je m’en rappelle ; donc au début quand j’ai travaillé sur ça, 
+
+3
+00:00:12.000 --> 00:00:18.000
+et que j’ai réussi les premières fois à faire jouer la caméra avec l’orientation du téléphone, 
+
+4
+00:00:18.000 --> 00:00:24.000
+j’étais un peu comme un enfant tout content d’avoir réussi mon truc et c’était… enfin c’était marrant quoi (rire joyeux / enfantin)

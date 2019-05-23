@@ -1,0 +1,23 @@
+0
+00:00:00.000 --> 00:00:06.000
+Alors pour le projet Abyss du coup globalement, ça se passe bien actuellement. 
+
+1
+00:00:06.000 --> 00:00:09.000
+C’est pas mal ça nous permet de tester tout ce qui est du domaine du jeu. 
+
+2
+00:00:09.000 --> 00:00:13.000
+Par exemple dans le cadre de notre projet en fait c’est vraiment un mini jeu qu’on va découvrir.
+
+3
+00:00:13.000 --> 00:00:20.000
+Découvrir de nouveaux domaines comme le game design le sound design c’est pas mal, 
+
+4
+00:00:20.000 --> 00:00:22.000
+ça change un peu des projets qu’on a fait, je trouve. 
+
+5
+00:00:22.000 --> 00:00:28.000
+Et pour l’instant ça se passe bien ce projet, contrairement à d’autres

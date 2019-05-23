@@ -1,0 +1,15 @@
+0
+00:00:00.000 --> 00:00:06.000
+Ce projet de réalité augmentée m’a permis de plonger 
+
+1
+00:00:06.000 --> 00:00:12.000
+pas les mains dans le code mais dans unity et dans la création de shader 
+
+2
+00:00:12.000 --> 00:00:18.000
+pour venir aider les développeurs et se plonger dans leur univers. 
+
+3
+00:00:18.000 --> 00:00:22.000
+C’est totalement de la découverte et du tâtonnement mais c’est aussi en ça que c’est super intéressant

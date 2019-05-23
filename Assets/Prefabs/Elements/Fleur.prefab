@@ -170,6 +170,17 @@ MonoBehaviour:
           m_StringArgument: OnAnimation
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3687718810242204848}
+        m_MethodName: SetSubtitle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   OnPointerLeave:
@@ -201,6 +212,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1c3fc05123b8644bc32c65e8649819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3687718810242204848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7632052575950641718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85deffed87702a444b535af2299cc7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subtitle: {fileID: 0}
 --- !u!1001 &1930797908390298431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -213,11 +237,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fleur
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 58b60774f20ebf944a0fc04b73dcc72b,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 7c42908221fb07a48a29390ec0cc051f, type: 2}
     - target: {fileID: -4216859302048453862, guid: 58b60774f20ebf944a0fc04b73dcc72b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -288,6 +307,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 58b60774f20ebf944a0fc04b73dcc72b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7c42908221fb07a48a29390ec0cc051f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58b60774f20ebf944a0fc04b73dcc72b, type: 3}
 --- !u!1 &7632052575950641718 stripped

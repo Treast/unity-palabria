@@ -1,0 +1,15 @@
+0
+00:00:00.000 --> 00:00:06.000
+Heu… Je suis pas à fond dans le sujet. Faire des trucs avec des drones c’est pas…
+
+1
+00:00:06.000 --> 00:00:13.000
+Enfin moi ça m’a soulé de bosser avec Xcode là le logiciel pour swift, parce que ça fait que bugger et ça me soule. 
+
+2
+00:00:13.000 --> 00:00:16.000
+Donc à chaque fois que je bosse sur ce logiciel ça me … 
+
+3
+00:00:16.000 --> 00:00:22.000
+Enfin ça me soule parce que ça marche jamais, il y a tout le temps des problèmes et tout.

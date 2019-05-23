@@ -1,0 +1,11 @@
+0
+00:00:00.000 --> 00:00:05.000
+Bah par exemple les modèles en fait c’était une énorme scène, il y avait beaucoup d’éléments. 
+
+1
+00:00:05.000 --> 00:00:12.000
+Et du coup on a dû faire pleins de retours aux graphistes pour dire comme quoi il y avait à améliorer ça ou... 
+
+2
+00:00:12.000 --> 00:00:018.000
+Ou comme j’ai dis, on avait plein de soucis avec les points de pivot, c’est les points de centre des objets.

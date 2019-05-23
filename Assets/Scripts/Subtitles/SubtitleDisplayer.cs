@@ -18,6 +18,7 @@ public class SubtitleDisplayer : MonoBehaviour
 
   public IEnumerator Begin()
   {
+    shouldStop = false;
     var currentlyDisplayingText = Text;
     var fadedOutText = Text2;
 

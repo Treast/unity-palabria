@@ -10,6 +10,7 @@ TagManager:
   - generatePlane
   - StartingScreen
   - PointerLoader
+  - Subtitles
   layers:
   - Default
   - TransparentFX

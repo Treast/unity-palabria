@@ -96,9 +96,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Scanner l\xE9g\xE8rement \npour trouver une surface"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 53accdc17a5c1463288e124890eaec25, type: 2}
-  m_sharedMaterial: {fileID: 21202040717236730, guid: 53accdc17a5c1463288e124890eaec25,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -171,7 +170,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 2
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -844,9 +843,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Vise le marqueur\npour commencer l\u2019exp\xE9rience"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 53accdc17a5c1463288e124890eaec25, type: 2}
-  m_sharedMaterial: {fileID: 21202040717236730, guid: 53accdc17a5c1463288e124890eaec25,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -919,7 +917,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 2
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2216,6 +2214,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 224115479841469282, guid: ffbc386a550954412bc4cb0da330078f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 48.3
+      objectReference: {fileID: 0}
     - target: {fileID: 95022117743959970, guid: ffbc386a550954412bc4cb0da330078f,
         type: 3}
       propertyPath: m_Enabled
@@ -2225,6 +2228,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114814228846693104, guid: ffbc386a550954412bc4cb0da330078f,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.9098039
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffbc386a550954412bc4cb0da330078f, type: 3}
@@ -2993,12 +3001,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fd92814a945046c1902c98220d9b4ab, type: 3}
---- !u!1 &4337240655111288588 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1220677634219286, guid: 7fd92814a945046c1902c98220d9b4ab,
-    type: 3}
-  m_PrefabInstance: {fileID: 4338285126066612762}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4440855418689333032 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114200980309347634, guid: 7fd92814a945046c1902c98220d9b4ab,
@@ -3038,6 +3040,12 @@ MonoBehaviour:
 --- !u!224 &4551087799510481200 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224082032821539626, guid: 7fd92814a945046c1902c98220d9b4ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 4338285126066612762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4337240655111288588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220677634219286, guid: 7fd92814a945046c1902c98220d9b4ab,
     type: 3}
   m_PrefabInstance: {fileID: 4338285126066612762}
   m_PrefabAsset: {fileID: 0}

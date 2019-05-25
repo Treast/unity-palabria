@@ -16,7 +16,8 @@ public class AnimationManager : MonoBehaviour
 
     }
 
-    void startAnimationOutro() {
+    void startAnimationOutro()
+    {
         EventManager.TriggerEvent("endStartAnimationOutro");
     }
 
@@ -25,17 +26,20 @@ public class AnimationManager : MonoBehaviour
         EventManager.TriggerEvent("endStartAnimationEnd");
     }
 
+
     void startAnimationToScanImage()
     {
         EventManager.TriggerEvent("endStartAnimationOutro");
         Animator scanImage = GameObject.FindGameObjectWithTag("AudioSelector").GetComponent<Animator>();
     }
 
-    void endAnimationPointerToScanImage() {
+    void endAnimationPointerToScanImage()
+    {
         EventManager.TriggerEvent("PlaneDetect");
     }
 
-    void pointerToScanImage() {
+    void pointerToScanImage()
+    {
         GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("ScanImage");
     }
 }

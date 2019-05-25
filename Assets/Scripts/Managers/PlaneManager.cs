@@ -13,7 +13,8 @@ namespace UnityEngine.XR.iOS
 
 
         // Use this for initialization
-        void Start () {
+        void Start()
+        {
 
             unityARAnchorManager = new UnityARAnchorManager();
             //UnityARUtility.InitializePlanePrefab(planePrefab);
@@ -31,7 +32,7 @@ namespace UnityEngine.XR.iOS
 
         void OnDestroy()
         {
-            unityARAnchorManager.Destroy ();
+            unityARAnchorManager.Destroy();
         }
 
         void OnGUI()
@@ -42,13 +43,15 @@ namespace UnityEngine.XR.iOS
         private void Update()
         {
 
-            if(initPlane) {
+            if (initPlane)
+            {
                 IEnumerable<ARPlaneAnchorGameObject> arpags = unityARAnchorManager.GetCurrentPlaneAnchors();
 
                 foreach (var planeAnchor in arpags)
                 {
 
-                    if(unityARAnchorManager.GetCurrentPlaneAnchors().Count >= 1) {
+                    if (unityARAnchorManager.GetCurrentPlaneAnchors().Count >= 1)
+                    {
                         EventManager.TriggerEvent("scanImage");
                         initPlane = false;
                     }

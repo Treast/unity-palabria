@@ -59,6 +59,9 @@ public class initScene : MonoBehaviour
             Vector3 position = UnityARMatrixOps.GetPosition(arImageAnchor.transform);
             Quaternion rotation = UnityARMatrixOps.GetRotation(arImageAnchor.transform);
 
+            rotation.w = 0;
+            rotation.x = 0;
+            rotation.z = 0;
             imageAnchorGO = Instantiate<GameObject>(prefabToGenerate, position, rotation);
             //GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("OffAnimation");
         }
@@ -88,7 +91,8 @@ public class initScene : MonoBehaviour
 
                     imageAnchorGO.transform.position = UnityARMatrixOps.GetPosition(arImageAnchor.transform);
                     imageAnchorGO.transform.eulerAngles = Vector3.up * UnityARMatrixOps.GetRotation(arImageAnchor.transform).eulerAngles.y;
-                    StopImageTracking();
+                    //StopImageTracking();
+                    UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent -= UpdateImageAnchor;
                     Destroy(imageLoader);
                     //Camera.main.WorldToViewportPoint(imageAnchorGO.transform.position);
                     //Destroy(GameObject.FindGameObjectWithTag("generatePlane"));
@@ -142,13 +146,12 @@ public class initScene : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(imageAnchorGO.transform.position);
+        //Debug.Log(imageAnchorGO.transform.position);
     }
 
     void OnDestroy()
     {
         UnityARSessionNativeInterface.ARImageAnchorAddedEvent -= AddImageAnchor;
-        UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent -= UpdateImageAnchor;
         //UnityARSessionNativeInterface.ARImageAnchorRemovedEvent -= RemoveImageAnchor;
 
     }

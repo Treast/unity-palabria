@@ -11,6 +11,8 @@ TagManager:
   - StartingScreen
   - PointerLoader
   - Subtitles
+  - Sprite
+  - Exp7
   layers:
   - Default
   - TransparentFX

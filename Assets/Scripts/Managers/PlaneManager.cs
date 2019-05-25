@@ -9,22 +9,24 @@ namespace UnityEngine.XR.iOS
         public GameObject planePrefab;
         private UnityARAnchorManager unityARAnchorManager;
 
-        public bool iniPlane = false;
+        public bool initPlane = false;
+
 
         // Use this for initialization
         void Start () {
 
             unityARAnchorManager = new UnityARAnchorManager();
-            UnityARUtility.InitializePlanePrefab(planePrefab);
-            Debug.Log("Init Plane Manager");
+            //UnityARUtility.InitializePlanePrefab(planePrefab);
             EventManager.StartListening("endStartAnimationOutro", initPlaneManager);
+
 
         }
 
         private void initPlaneManager()
         {
-            Debug.Log("Generate Plane True");
-            iniPlane = true;
+            Animator endStartAnimationOutro = GameObject.FindGameObjectWithTag("Sprite").GetComponent<Animator>();
+            endStartAnimationOutro.SetTrigger("FadeOn");
+            initPlane = true;
         }
 
         void OnDestroy()
@@ -40,11 +42,16 @@ namespace UnityEngine.XR.iOS
         private void Update()
         {
 
-            if(iniPlane) {
+            if(initPlane) {
                 IEnumerable<ARPlaneAnchorGameObject> arpags = unityARAnchorManager.GetCurrentPlaneAnchors();
+
                 foreach (var planeAnchor in arpags)
                 {
-                    EventManager.TriggerEvent("PlaneDetect");
+
+                    if(unityARAnchorManager.GetCurrentPlaneAnchors().Count >= 1) {
+                        EventManager.TriggerEvent("scanImage");
+                        initPlane = false;
+                    }
                 }
             }
         }

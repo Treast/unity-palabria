@@ -45,7 +45,7 @@ public class initScene : MonoBehaviour
         {
             Debug.Log("Premier");
             UnityARSessionNativeInterface.ARImageAnchorAddedEvent += AddImageAnchor;
-            //UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent += UpdateImageAnchor;
+            UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent += UpdateImageAnchor;
             firstInit = true;
         }
     }
@@ -60,7 +60,7 @@ public class initScene : MonoBehaviour
             Quaternion rotation = UnityARMatrixOps.GetRotation(arImageAnchor.transform);
 
             imageAnchorGO = Instantiate<GameObject>(prefabToGenerate, position, rotation);
-            GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("OffAnimation");
+            //GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("OffAnimation");
         }
     }
 
@@ -88,7 +88,7 @@ public class initScene : MonoBehaviour
 
                     imageAnchorGO.transform.position = UnityARMatrixOps.GetPosition(arImageAnchor.transform);
                     imageAnchorGO.transform.eulerAngles = Vector3.up * UnityARMatrixOps.GetRotation(arImageAnchor.transform).eulerAngles.y;
-
+                    StopImageTracking();
                     Destroy(imageLoader);
                     //Camera.main.WorldToViewportPoint(imageAnchorGO.transform.position);
                     //Destroy(GameObject.FindGameObjectWithTag("generatePlane"));
@@ -111,15 +111,27 @@ public class initScene : MonoBehaviour
         m_session.RemoveUserAnchor(anchor.identifier);
     }
 
-    public void planeDetectionOFF()
+    void StopImageTracking()
     {
-        planeDetection = UnityARPlaneDetection.None;
+        Debug.Log("GameManager: StopImageDetection");
+
+        // Update session
+        UnityARSessionNativeInterface m_session = UnityARSessionNativeInterface.GetARSessionNativeInterface();
         ARKitWorldTrackingSessionConfiguration config = new ARKitWorldTrackingSessionConfiguration();
-        config.planeDetection = planeDetection;
-        //config.alignment = startAlignment;
+        config.planeDetection = UnityARPlaneDetection.None;
+        config.referenceImagesGroupName = null;
+        config.maximumNumberOfTrackedImages = 0;
         config.getPointCloudData = false;
-        config.enableLightEstimation = false;
+        config.alignment = UnityARAlignment.UnityARAlignmentGravity;
+        config.enableLightEstimation = true;
+        config.enableAutoFocus = true;
         m_session.RunWithConfig(config);
+
+        // We destroy all GeneratorAnchor script to prevent created anchor to update
+        //Destroy(GameBoardGenerateImageAnchor);
+        // TODO the same thing but for PanelControl
+        // Destroy (PanelControlGenerateImageAnchor);
+
     }
 
 
@@ -128,6 +140,10 @@ public class initScene : MonoBehaviour
     }
 
 
+    private void Update()
+    {
+        Debug.Log(imageAnchorGO.transform.position);
+    }
 
     void OnDestroy()
     {

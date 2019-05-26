@@ -66,11 +66,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Prom\xE8ne toi et r\xE9v\xE9le\nles arbres \xE0 palabre"
+  m_text: "Prom\xE8ne toi et\nd\xE9couvre les arbres \xE0 palabres."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 53accdc17a5c1463288e124890eaec25, type: 2}
-  m_sharedMaterial: {fileID: 21202040717236730, guid: 53accdc17a5c1463288e124890eaec25,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -136,14 +135,14 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114536561375675978}
-    characterCount: 42
+    characterCount: 46
     spriteCount: 0
     spaceCount: 7
     wordCount: 8
     linkCount: 0
     lineCount: 2
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -433,11 +432,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "pour d\xE9couvrire et \xE9couter\nles confidences des \xE9tudiants."
+  m_text: "Vise les fleurs pour \xE9couter\nles confidences des \xE9tudiants."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 53accdc17a5c1463288e124890eaec25, type: 2}
-  m_sharedMaterial: {fileID: 21202040717236730, guid: 53accdc17a5c1463288e124890eaec25,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -503,14 +501,14 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114200980309347634}
-    characterCount: 57
+    characterCount: 59
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 8
+    spaceCount: 8
+    wordCount: 9
     linkCount: 0
     lineCount: 2
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -778,11 +776,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Bienvenue dans la f\xF4ret\nPALABRIA"
+  m_text: Bienvenue dans Palabria
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 53accdc17a5c1463288e124890eaec25, type: 2}
-  m_sharedMaterial: {fileID: 21202040717236730, guid: 53accdc17a5c1463288e124890eaec25,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -848,14 +845,14 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114535473828841784}
-    characterCount: 32
+    characterCount: 23
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}

@@ -33,8 +33,8 @@ public class initScene : MonoBehaviour
     void Start()
     {
         EventManager.StartListening("PlaneDetect", PlaneDetect);
-        m_session = UnityARSessionNativeInterface.GetARSessionNativeInterface();
-
+        UnityARSessionNativeInterface.ARImageAnchorAddedEvent += AddImageAnchor;
+        UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent += UpdateImageAnchor;
     }
 
 
@@ -44,8 +44,7 @@ public class initScene : MonoBehaviour
         if (!firstInit)
         {
             Debug.Log("Premier");
-            UnityARSessionNativeInterface.ARImageAnchorAddedEvent += AddImageAnchor;
-            UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent += UpdateImageAnchor;
+
             firstInit = true;
         }
     }
@@ -58,49 +57,57 @@ public class initScene : MonoBehaviour
         {
             Vector3 position = UnityARMatrixOps.GetPosition(arImageAnchor.transform);
             Quaternion rotation = UnityARMatrixOps.GetRotation(arImageAnchor.transform);
+            rotation.w = 0;
+            rotation.x = 0;
+            rotation.z = 0;
+            position.y = position.y + 10000;
 
             imageAnchorGO = Instantiate<GameObject>(prefabToGenerate, position, rotation);
-            //GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("OffAnimation");
+            firstInit = true;
+            WaitScanImage();
         }
     }
 
     void UpdateImageAnchor(ARImageAnchor arImageAnchor)
     {
-        Debug.LogFormat("image anchor updated[{0}] : tracked => {1}", arImageAnchor.identifier, arImageAnchor.isTracked);
-        if (arImageAnchor.referenceImageName == referenceImage.imageName && planeDetect && cpt < endLoop)
-        {
-            if (arImageAnchor.isTracked)
+
+            if (arImageAnchor.referenceImageName == referenceImage.imageName && planeDetect && cpt < endLoop)
             {
-                if (!imageAnchorGO.activeSelf)
+                if (arImageAnchor.isTracked)
                 {
-                    imageAnchorGO.SetActive(true);
+                    if (!imageAnchorGO.activeSelf)
+                    {
+                        imageAnchorGO.SetActive(true);
 
+                    }
+                    cpt++;
+                    imageLoader.fillAmount = Mathf.Clamp01(cpt / endLoop);
+
+                    if (Mathf.Clamp01(cpt / endLoop) == 1)
+                    {
+
+                        // Placement de l'objet
+                        // Piste
+                        // https://gist.github.com/otmb/28621781f88dc6a34b35e1edb2740fb2
+
+                        imageAnchorGO.transform.position = UnityARMatrixOps.GetPosition(arImageAnchor.transform);
+                        imageAnchorGO.transform.eulerAngles = Vector3.up * (UnityARMatrixOps.GetRotation(arImageAnchor.transform).eulerAngles.y);
+                        //StopImageTracking();
+                        UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent -= UpdateImageAnchor;
+                        Destroy(imageLoader);
+                        //Camera.main.WorldToViewportPoint(imageAnchorGO.transform.position);
+                        //Destroy(GameObject.FindGameObjectWithTag("generatePlane"));
+                        GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("OffAnimation");
+                    }
                 }
-                cpt++;
-                imageLoader.fillAmount = Mathf.Clamp01(cpt / endLoop);
-
-                if (Mathf.Clamp01(cpt / endLoop) == 1)
+                else if (imageAnchorGO.activeSelf)
                 {
-
-                    // Placement de l'objet
-                    // Piste
-                    // https://gist.github.com/otmb/28621781f88dc6a34b35e1edb2740fb2
-
-                    imageAnchorGO.transform.position = UnityARMatrixOps.GetPosition(arImageAnchor.transform);
-                    imageAnchorGO.transform.eulerAngles = Vector3.up * UnityARMatrixOps.GetRotation(arImageAnchor.transform).eulerAngles.y;
-                    StopImageTracking();
-                    Destroy(imageLoader);
-                    //Camera.main.WorldToViewportPoint(imageAnchorGO.transform.position);
-                    //Destroy(GameObject.FindGameObjectWithTag("generatePlane"));
-                    GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("OffAnimation");
+                    imageAnchorGO.SetActive(false);
                 }
-            }
-            else if (imageAnchorGO.activeSelf)
-            {
-                imageAnchorGO.SetActive(false);
-            }
 
-        }
+            }
+        
+       
 
     }
 
@@ -142,13 +149,19 @@ public class initScene : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(imageAnchorGO.transform.position);
+        Debug.Log(GameObject.FindGameObjectWithTag("PointerLoader").GetComponent<Image>());
+        //Debug.Log(imageAnchorGO.transform.position);
     }
 
+    IEnumerator WaitScanImage()
+    {
+        yield return new WaitForSeconds(1);
+        UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent += UpdateImageAnchor;
+    }
     void OnDestroy()
     {
         UnityARSessionNativeInterface.ARImageAnchorAddedEvent -= AddImageAnchor;
-        UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent -= UpdateImageAnchor;
+
         //UnityARSessionNativeInterface.ARImageAnchorRemovedEvent -= RemoveImageAnchor;
 
     }

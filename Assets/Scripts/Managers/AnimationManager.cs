@@ -38,4 +38,8 @@ public class AnimationManager : MonoBehaviour
     void pointerToScanImage() {
         GameObject.FindGameObjectWithTag("StartingScreen").GetComponent<Animator>().SetTrigger("ScanImage");
     }
+    void sceneIsReady()
+    {
+        EventManager.TriggerEvent("SceneIsReady");
+    }
 }

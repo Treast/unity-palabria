@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/WorldTrackingScene.unity
     guid: 6b4192e10240944b69cbe90ecab73a32
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TeleportationScene.unity
     guid: b56b7b7ce47e944bca6749134b1c0f3d
   - enabled: 0
@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PlacementScene.unity
     guid: efbed404ac5d34a1f8b1145b35b12d89
+  - enabled: 1
+    path: Assets/Scenes/PalabriaScene.unity
+    guid: f2784b4f222b1b9409139bcf5bbe8d06
   m_configObjects: {}

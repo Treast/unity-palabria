@@ -90,7 +90,7 @@ public class initScene : MonoBehaviour
                         // https://gist.github.com/otmb/28621781f88dc6a34b35e1edb2740fb2
 
                         imageAnchorGO.transform.position = UnityARMatrixOps.GetPosition(arImageAnchor.transform);
-                    imageAnchorGO.transform.eulerAngles = Vector3.up * (UnityARMatrixOps.GetRotation(arImageAnchor.transform).eulerAngles.y);
+                        imageAnchorGO.transform.eulerAngles = Vector3.up * (UnityARMatrixOps.GetRotation(arImageAnchor.transform).eulerAngles.y);
                         //StopImageTracking();
                         UnityARSessionNativeInterface.ARImageAnchorUpdatedEvent -= UpdateImageAnchor;
                         Destroy(imageLoader);

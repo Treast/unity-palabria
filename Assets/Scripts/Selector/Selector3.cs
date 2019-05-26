@@ -25,6 +25,7 @@ public class Selector3 : MonoBehaviour
 
         pointerAnimator = pointer.GetComponent<Animator>();
         pointerLoader = GameObject.FindGameObjectsWithTag("PointerLoader")[0].GetComponent<Image>();
+
     }
 
     void LateUpdate()
@@ -39,11 +40,16 @@ public class Selector3 : MonoBehaviour
             {
                 if (lastGameObjectHit != hit.collider.gameObject)
                 {
+
+                    Debug.Log("Salut");
                     lastGameObjectHit = hit.collider.gameObject;
                     selectable.TriggerPointerEnter();
                     showInteractionPointer();
                 } else {
                     if(!hasTriggered) {
+
+                        Debug.Log("PointerLoader" + pointerLoader);
+                        Debug.Log("HitObject" + hit.collider.gameObject);
                         currentTime += Time.deltaTime;
                         float p = Mathf.Clamp01(currentTime / selectionDuration);
                         pointerLoader.color = new Color(1, 1, 1, 1);
@@ -52,6 +58,7 @@ public class Selector3 : MonoBehaviour
 
                         if (p >= 1)
                         {
+                            Debug.Log("hasTriggered 2");
                             hasTriggered = true;
                             pointerAnimator.SetBool("IsSelecting", false);
                             EventManager.TriggerEvent("AudioGonnaPlay");
@@ -65,6 +72,7 @@ public class Selector3 : MonoBehaviour
         }
         else
         {
+            Debug.Log("DEBUG");
             currentTime = 0;
             pointerAnimator.SetBool("IsSelecting", false);
             hasTriggered = false;

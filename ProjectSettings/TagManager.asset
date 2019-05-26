@@ -13,6 +13,7 @@ TagManager:
   - Subtitles
   - Sprite
   - Exp7
+  - ParentGamera
   layers:
   - Default
   - TransparentFX

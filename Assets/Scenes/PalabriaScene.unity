@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenceImage: {fileID: 11400000, guid: 7f5ca97e6c46830499176b1a71686f95, type: 2}
-  prefabToGenerate: {fileID: 6049131295782451989, guid: 93db199b0d02042ed9acf072aafa3dc2,
+  prefabToGenerate: {fileID: 6378813301830313290, guid: d1b695ff8961d4b8c9e7651b0fbcfbd1,
     type: 3}
   imageLoader: {fileID: 1879427796}
   cpt: 0
@@ -1154,6 +1154,24 @@ MonoBehaviour:
   detectionImages: {fileID: 11400000, guid: 9296bc09c1874944491cd189141f597c, type: 2}
   maximumNumberOfTrackedImages: 5
   detectionObjects: {fileID: 0}
+--- !u!1 &1848045569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4338285125158881276, guid: 8f257fedf284bc2469cb4035ba20404a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1879427793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &1848045571
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848045569}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1879427793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1620,6 +1638,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -5452459456211072043, guid: 0a02e399611274617ac325bf9309c607,
         type: 2}
+    - target: {fileID: 4338285125032586753, guid: 8f257fedf284bc2469cb4035ba20404a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
+      objectReference: {fileID: 0}
     - target: {fileID: 4338285125585424475, guid: 8f257fedf284bc2469cb4035ba20404a,
         type: 3}
       propertyPath: m_Material
@@ -2009,7 +2032,7 @@ PrefabInstance:
     - target: {fileID: 6697194579585785230, guid: 8f257fedf284bc2469cb4035ba20404a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6697194579585785230, guid: 8f257fedf284bc2469cb4035ba20404a,
         type: 3}
@@ -2058,6 +2081,16 @@ PrefabInstance:
       propertyPath: m_subTextObjects.Array.data[1]
       value: 
       objectReference: {fileID: 77343294}
+    - target: {fileID: 6697194579585785230, guid: 8f257fedf284bc2469cb4035ba20404a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338285125729649945, guid: 8f257fedf284bc2469cb4035ba20404a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1780397680131665276, guid: 8f257fedf284bc2469cb4035ba20404a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

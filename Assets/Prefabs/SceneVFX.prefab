@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6049131295782451990}
   m_Layer: 0
   m_Name: SceneVFX
-  m_TagString: Untagged
+  m_TagString: Exp7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,6 +150,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SceneTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952470457005441403, guid: 8a34a27934236488bae239f63a2d53e8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6952470457005441402, guid: 8a34a27934236488bae239f63a2d53e8,
         type: 3}

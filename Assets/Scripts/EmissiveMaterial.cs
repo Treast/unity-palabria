@@ -9,14 +9,17 @@ public class EmissiveMaterial : MonoBehaviour
     Material material;
     Renderer[] renderers;
 
+    [SerializeField] Color color;
+    [SerializeField] float speed = 2.0f;
+
     void Start()
     {
         fakeMaterial = new Material(Shader.Find("Standard"));
-        fakeMaterial.color = new Color(0, 0, 0, 1);
         material = GetComponentsInChildren<Renderer>()[0].material;
         renderers = GetComponentsInChildren<Renderer>();
+        fakeMaterial.color = material.color;
 
-        fakeMaterial.DOColor(new Color(0.6f, 0, 0, 1), 2).SetLoops(-1, LoopType.Yoyo);
+        fakeMaterial.DOColor(color, speed).SetLoops(-1, LoopType.Yoyo);
     }
 
     void Update() {
@@ -26,3 +29,4 @@ public class EmissiveMaterial : MonoBehaviour
         }
     }
 }
+

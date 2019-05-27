@@ -40,7 +40,7 @@ public class Selector3 : MonoBehaviour
         RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
-        if (Physics.Raycast(transform.position, fwd, out hit))
+        if (Physics.Raycast(transform.position, fwd, out hit) && isReady)
         {
             Selectable3 selectable = hit.collider.GetComponent<Selectable3>();
             if (selectable)
@@ -63,7 +63,6 @@ public class Selector3 : MonoBehaviour
 
                         if (p >= 1)
                         {
-                            Debug.Log("hasTriggered 2");
                             hasTriggered = true;
                             pointerAnimator.SetBool("IsSelecting", false);
                             EventManager.TriggerEvent("AudioGonnaPlay");
@@ -77,7 +76,6 @@ public class Selector3 : MonoBehaviour
         }
         else
         {
-            Debug.Log("DEBUG");
             currentTime = 0;
             pointerAnimator.SetBool("IsSelecting", false);
             hasTriggered = false;

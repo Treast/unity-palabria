@@ -495,8 +495,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Ecrit nous ta palabre\net accroche-la \xE0 ce dernier arbre."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0a02e399611274617ac325bf9309c607, type: 2}
+  m_sharedMaterial: {fileID: -5452459456211072043, guid: 0a02e399611274617ac325bf9309c607,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -768,7 +769,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2224, y: 1668}
+  m_SizeDelta: {x: 2388, y: 1668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3297272912190387906
 CanvasRenderer:
@@ -3251,7 +3252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 459}
+  m_AnchoredPosition: {x: 0, y: 586}
   m_SizeDelta: {x: 1200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &683448079112664983
@@ -3285,8 +3286,9 @@ MonoBehaviour:
   m_text: "Merci d\u2019avoir visit\xE9 Palabria.\nAu revoir, \xE0 l'ann\xE9e prochaine
     !"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0a02e399611274617ac325bf9309c607, type: 2}
+  m_sharedMaterial: {fileID: -5452459456211072043, guid: 0a02e399611274617ac325bf9309c607,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3558,7 +3560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 232}
+  m_AnchoredPosition: {x: 0, y: 268}
   m_SizeDelta: {x: 1200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7887654282517082548
@@ -3592,8 +3594,9 @@ MonoBehaviour:
   m_text: "Graphistes\nSarah Hulsken \u2022 Elora Langlois\n\nD\xE9veloppeurs\nChlo\xE9
     David \u2022 Th\xE9o Pazzaglia \u2022 Vincent Riva\n\nMusique\nArwen Tanguy"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0a02e399611274617ac325bf9309c607, type: 2}
+  m_sharedMaterial: {fileID: -5452459456211072043, guid: 0a02e399611274617ac325bf9309c607,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3635,7 +3638,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 56
+  m_firstOverflowCharacterIndex: 43
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -4158,15 +4161,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffbc386a550954412bc4cb0da330078f, type: 3}
---- !u!224 &4551656425822780947 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224639234059749576, guid: ffbc386a550954412bc4cb0da330078f,
-    type: 3}
-  m_PrefabInstance: {fileID: 4338285125578340059}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4339051848834519183 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1064314030892628, guid: ffbc386a550954412bc4cb0da330078f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4338285125578340059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &4551656425822780947 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224639234059749576, guid: ffbc386a550954412bc4cb0da330078f,
     type: 3}
   m_PrefabInstance: {fileID: 4338285125578340059}
   m_PrefabAsset: {fileID: 0}
@@ -4923,18 +4926,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fd92814a945046c1902c98220d9b4ab, type: 3}
---- !u!114 &4441188268139621456 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114536561375675978, guid: 7fd92814a945046c1902c98220d9b4ab,
+--- !u!1 &4337240655111288588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220677634219286, guid: 7fd92814a945046c1902c98220d9b4ab,
     type: 3}
   m_PrefabInstance: {fileID: 4338285126066612762}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+--- !u!224 &4551087799510481200 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224082032821539626, guid: 7fd92814a945046c1902c98220d9b4ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 4338285126066612762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4441189416088658722 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114535473828841784, guid: 7fd92814a945046c1902c98220d9b4ab,
@@ -4947,18 +4950,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &4551087799510481200 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224082032821539626, guid: 7fd92814a945046c1902c98220d9b4ab,
+--- !u!114 &4441188268139621456 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114536561375675978, guid: 7fd92814a945046c1902c98220d9b4ab,
     type: 3}
   m_PrefabInstance: {fileID: 4338285126066612762}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4337240655111288588 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1220677634219286, guid: 7fd92814a945046c1902c98220d9b4ab,
-    type: 3}
-  m_PrefabInstance: {fileID: 4338285126066612762}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4440855418689333032 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114200980309347634, guid: 7fd92814a945046c1902c98220d9b4ab,

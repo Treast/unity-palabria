@@ -4,6 +4,8 @@
     Tags { "Queue"="Transparent+1" }
     Pass {
       Blend Zero One // keep the image behind it
+            
+            Cull Off
     }
   } 
 }

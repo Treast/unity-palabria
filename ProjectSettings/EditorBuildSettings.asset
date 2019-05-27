@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PalabriaScene.unity
     guid: f2784b4f222b1b9409139bcf5bbe8d06
+  - enabled: 0
+    path: Assets/Scenes/ScreenshotScene.unity
+    guid: bda5c95b0d7704db2a9752784c537a1a
   m_configObjects: {}
